@@ -55,8 +55,6 @@ const useGames = () => {
         const controller = new AbortController();
         setIsLoading(true);
 
-         new Promise(resolve => setTimeout(resolve, 1000));
-
         apiClient
             .get<FetchGamesResponse>("/games", {signal:controller.signal})
             .then((res) => {
@@ -69,7 +67,7 @@ const useGames = () => {
             setError(err.message);
             setIsLoading(false);
         });
-        
+
         return () => controller.abort();
     }, []);
     return { games, error, isLoading };
