@@ -5,12 +5,7 @@ const getCroppedImageUrl = (url: string, width:number=600, length:number=400) =>
 
     const newUrl = url.slice(0, index)+ `crop/${width}/${length}/`+ url.slice(index);
 
-
-    console.log(newUrl);;
-
     return newUrl;
-    
-
 }
 
 
