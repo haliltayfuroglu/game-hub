@@ -13,22 +13,10 @@ function App() {
       </GridItem>
 
       <Show above="lg">
-        <GridItem
-          area="aside"
-          bg="gray.300"
-          borderLeft="1px solid gray.200"
-          borderBottom="1px solid gray.200"
-        >
-          Aside
-        </GridItem>
+        <GridItem area="aside">Aside</GridItem>
       </Show>
 
-      <GridItem
-        area="main"
-        border="1px solid gray.200"
-        borderBottom="1px solid gray.200"
-        p={4}
-      >
+      <GridItem area="main" p={4}>
         <h2>Main Content</h2>
         <p>This is the main content area.</p>
       </GridItem>
