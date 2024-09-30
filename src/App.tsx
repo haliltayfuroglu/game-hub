@@ -2,6 +2,7 @@ import { Grid, GridItem, Show } from "@chakra-ui/react";
 
 import "./App.css";
 import NavBar from "./components/NavBar";
+import GameGrid from "./components/GameGrid";
 
 function App() {
   return (
@@ -17,8 +18,7 @@ function App() {
       </Show>
 
       <GridItem area="main" p={4}>
-        <h2>Main Content</h2>
-        <p>This is the main content area.</p>
+        <GameGrid />
       </GridItem>
     </Grid>
   );
