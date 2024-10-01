@@ -10,6 +10,7 @@ export interface Game {
     background_image: string;
     parent_platforms: {platform: Platform}[]
     rating: number;
+    rating_top: number;
     genres: Array<{ id: number; name: string }>;
     platforms: Array<{ id: number; name: string }>;
     description_raw: string;
